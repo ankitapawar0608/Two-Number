@@ -87,7 +87,22 @@
 
     <script>
 
-      
+        function calSum()
+        {
+           const a = document.getElementById("val1").value;
+           const b = document.getElementById("val2").value;
+           const sum = parseInt(a) + parseInt(b);
+           
+           document.getElementById("heading").innerHTML = "Sum:"+sum
+        }
+
+        function resetCal()
+        {
+            document.getElementById("heading").innerHTML = "Sum:"
+            const a = document.getElementById("val1").value = ""
+            const b = document.getElementById("val2").value = ""
+
+        }
     </script>
 </body>
 
