@@ -1,61 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
-   
+
     <title>Project</title>
     <style>
-       body{
-    justify-content: ;
-}
-.container{
-    
-    height: 220px;
-    background-color: #221d33;
-    width: 250px;
-    padding: 10px;
-    border-radius: 10px;
-    font-family: 'Bree Serif', serif;
-}
+        body {
+            justify-content: ;
+        }
 
-.input-box{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:10px ;
-    font-family: 'Bree Serif', serif;
-}
-#heading{
-   text-align: center;
-   color: aliceblue;
-   
-}
-.btn{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-color:#d47e41;
-    color: white;
-    font-size: 20px;
-    border: none;
-    border-radius: 16px;
-    font-family: 'Bree Serif', serif;
-   
-}
+        .container {
+
+            height: 250px;
+            background-color: #221d33;
+            width: 250px;
+            padding: 10px;
+            border-radius: 10px;
+            font-family: 'Bree Serif', serif;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .input-box {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            font-family: 'Bree Serif', serif;
+        }
+
+        #heading {
+            text-align: center;
+            color: aliceblue;
+
+
+        }
+
+        .btn {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #d47e41;
+            color: white;
+            font-size: 20px;
+            border: none;
+            border-radius: 16px;
+            font-family: 'Bree Serif', serif;
+            cursor: pointer;
+        }
+
+        .reset{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #a52635;
+            color: white;
+            font-size: 15px;
+            border: none;
+            border-radius: 16px;
+            font-family: 'Bree Serif', serif;
+            cursor: pointer;
+            margin-top: 20px;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
-    <input type="text" placeholder="Enter Value 1:" class="input-box">
-    <br>
-    <input type="text" placeholder="Enter Value 2:" class="input-box">
+        <input type="text" placeholder="Enter Value 1:" class="input-box" id="val1">
+        <br>
+        <input type="text" placeholder="Enter Value 2:" class="input-box" id="val2">
 
-    <h1 id="heading">Sum:</h1>
+        <h1 id="heading">Sum:</h1>
 
-    <button class="btn">Calculate</button>
+        <button class="btn" onclick="calSum()">Calculate</button>
+
+        <button class="reset" onclick="resetCal()">Reset</button>
     </div>
+
+
+
+    <script>
+
+      
+    </script>
 </body>
+
 </html>
